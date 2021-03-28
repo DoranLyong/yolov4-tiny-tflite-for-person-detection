@@ -5,6 +5,15 @@ It doesn't include how to train your custom dataset, but only the ```pretrained 
 
 <br/>
 
+## Requirements 
+Check the ```requirements.txt``` to install requested packages, or run like below:
+``` bash
+~$ pip install -r requirements.txt
+```
+
+
+<br/>
+
 ## Inference with a image
 * run the code like below 
 * the input arguments can be changed by yourself
@@ -34,10 +43,12 @@ Even though there is not a code to train yolov4-tiny, let me describe how I get 
 <br/>
 
 ### 1. Achieve custom dataset from YouTube videos (using ```AVA``` dataset)
-Go to [[ref5]](https://github.com/DoranLyong/AVA-Dataset-Processing-for-Person-Detection), then you can get to know how to prepare a custom dataset, which consists of only persons. ```AVA``` dataset has been used for multiple application tasks, but I only used this for getting person images with bounding box labels.
+Go to [[ref5]](https://github.com/DoranLyong/AVA-Dataset-Processing-for-Person-Detection), then you can get to know how to prepare a custom dataset, which consists of only persons. ```AVA``` dataset has been used for multiple application tasks, but I only used this for getting ```person images``` with bounding box labels.
 
 
 ### 2. Train yolov4-tiny to detect only person class using the ```Darknet``` with the custom dataset
+I got the idea that training person detector and uploading on my edge device from [roboflow blog, here](https://blog.roboflow.com/how-to-train-a-custom-mobile-object-detection-model/). They supply various and useful tools for data preprocessing, however, it's not free for massive datasets.
+
 
 ***
 ## Reference 
