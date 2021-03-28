@@ -34,7 +34,11 @@ Even though there is not a code to train yolov4-tiny, let me describe how I get 
 <br/>
 
 ### 1. Achieve custom dataset from YouTube videos (using ```AVA``` dataset)
+Go to [[ref5]](https://github.com/DoranLyong/AVA-Dataset-Processing-for-Person-Detection), then you can get to know how to prepare a custom dataset, which consists of only persons. ```AVA``` dataset has been used for multiple application tasks, but I only used this for getting person images with bounding box labels.
 
+<br/>
+
+### 2. Train yolov4-tiny to detect only person class using the ```Darknet``` with the custom dataset
 
 ***
 ## Reference 
