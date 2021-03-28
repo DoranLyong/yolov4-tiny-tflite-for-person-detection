@@ -47,8 +47,19 @@ Go to [[ref5]](https://github.com/DoranLyong/AVA-Dataset-Processing-for-Person-D
 
 
 ### 2. Train yolov4-tiny to detect only person class using the ```Darknet``` with the custom dataset
-I got the idea that training person detector and uploading on my edge device from [roboflow blog, here](https://blog.roboflow.com/how-to-train-a-custom-mobile-object-detection-model/). They supply various and useful tools for data preprocessing, however, it's not free for massive datasets.
+I got the idea that training person detector and uploading on my edge device from [roboflow blog, here](https://blog.roboflow.com/how-to-train-a-custom-mobile-object-detection-model/). They supply various and useful tools for data preprocessing, however, it's not free for massive datasets. Furthermore, I couldn't know ```how to set up my dataset``` for training ```yolov4-tiny``` just reading the blog.
 
+So, I found out another awesome post in medium ([hear](https://medium.com/analytics-vidhya/train-a-custom-yolov4-tiny-object-detector-using-google-colab-b58be08c9593#a70f)). I followed the whole instruction of the post in order to train my model. Consequently, I trained my model using ```google colab```.
+
+
+### 3. Convert the trained ```Darknet``` model to ```tensorflow lite``` model
+After training own ```darknet yolov4-tiny``` model, we finally need to convert the darknet model to Tensorflow one. This is pretty much easy if you following [this github](https://github.com/hunglc007/tensorflow-yolov4-tflite) well. 
+* [```Darknet.weights```] → [```.tflite```]
+
+If you succeed to take the weight file in ```.tflite``` format, we're ready to build an inference code for person detection using Tensorflow lite.
+
+### 4. Make the inference codes like this repository for my own application
+I built two inference codes; one for image input and another for webcam video input. These codes are referred to the original inference codes [here](https://github.com/hunglc007/tensorflow-yolov4-tflite);  ```detect.py``` and ```detectvideo.py```.
 
 ***
 ## Reference 
