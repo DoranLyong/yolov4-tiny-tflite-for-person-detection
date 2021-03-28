@@ -1,2 +1,2 @@
-# yolov4-tiny-tflite-for-person-detection
+# Yolov4-tiny-tflite for Person Detection
 Person Detection using Yolov4-tiny-tflite
