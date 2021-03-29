@@ -34,7 +34,7 @@ Check the ```requirements.txt``` to install requested packages, or run like belo
 <br/>
 
 ## How did I do?
-Even though there is not a code to train yolov4-tiny, let me describe how I get the trained weights with my custom dataset:
+Even though there is not a code to train yolov4-tiny, let me describe how I got the trained weights with my custom dataset:
 1. Achieve custom dataset from YouTube videos (using ```AVA``` dataset)
 2. Train yolov4-tiny to detect only person class using the ```Darknet``` with the custom dataset
 3. Convert the trained ```Darknet``` model to ```tensorflow lite``` model
