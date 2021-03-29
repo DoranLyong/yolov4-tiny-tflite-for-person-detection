@@ -69,3 +69,10 @@ I built two inference codes; one for image input and another for webcam video in
 [3] [tensorflow-yolov4-tflite, github](https://github.com/hunglc007/tensorflow-yolov4-tflite) / 이걸 참고해서 Darknet 모델을 tensorflow lite 모델로 바꿈.<br/>
 [4] [Yolo v4, v3 and v2 for Windows and Linux, github](https://github.com/AlexeyAB/darknet) / yolov4-tiny 학습 코드는 여기걸 참고 <br/>
 [5] [AVA Dataset Processing for Person Detection, github](https://github.com/DoranLyong/AVA-Dataset-Processing-for-Person-Detection) / Person detection용 학습데이터 얻는 방법 (이걸로 DB를 구축함).  <br/>
+
+## Further helpable readings 
+[a] [theAIGuysCode, tensorflow-yolov4-tflite, github](https://github.com/theAIGuysCode/tensorflow-yolov4-tflite) / (ref3)을 참고한 레포지토리 <br/>
+[b] [Object Detection and Tracking in 2020, netcetera blog](https://blog.netcetera.com/object-detection-and-tracking-in-2020-f10fb6ff9af3) / Detection 모듈과 Tracking 모듈을 조합할 때 참고하자 <br/>
+[c] [Real-time Human Detection in Computer Vision - Part2, medium](https://medium.com/@madhawavidanapathirana/real-time-human-detection-in-computer-vision-part-2-c7eda27115c6) / 사람 감지 모듈을 만들 때 생각해볼 수 있는 파이프라인 소개 <br/>
+[d] [Object detection and tracking in PyTorch, towarddatascience](https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98) / 심플한 튜토리얼 코드 제공 <br/>
+[e] [Object Detection and Tracking, MediaPipe](https://google.github.io/mediapipe/solutions/box_tracking.html) / Google MediaPipe의 경우에도 Object detection을 위한 ML inference 모듈과 Box Tracking 모듈을 조합해서 프로세싱에 효율성을 더함. 이렇게 구성하면 매 프레임마다 detection inference를 할 필요가 없어진다. <br/> 
