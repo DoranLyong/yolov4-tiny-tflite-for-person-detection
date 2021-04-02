@@ -76,3 +76,4 @@ I built two inference codes; one for image input and another for webcam video in
 [c] [Real-time Human Detection in Computer Vision - Part2, medium](https://medium.com/@madhawavidanapathirana/real-time-human-detection-in-computer-vision-part-2-c7eda27115c6) / 사람 감지 모듈을 만들 때 생각해볼 수 있는 파이프라인 소개 <br/>
 [d] [Object detection and tracking in PyTorch, towarddatascience](https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98) / 심플한 튜토리얼 코드 제공 <br/>
 [e] [Object Detection and Tracking, MediaPipe](https://google.github.io/mediapipe/solutions/box_tracking.html) / Google MediaPipe의 경우에도 Object detection을 위한 ML inference 모듈과 Box Tracking 모듈을 조합해서 프로세싱에 효율성을 더함. 이렇게 구성하면 매 프레임마다 detection inference를 할 필요가 없어진다. <br/> 
+[f] [Object-Detection-and-Tracking, github](https://github.com/yehengchen/Object-Detection-and-Tracking/tree/master/OneStage/yolo) / YOLOv4 + Deep_SORT 의 조합 예시코드 참고 (강력 추천) <br/>
