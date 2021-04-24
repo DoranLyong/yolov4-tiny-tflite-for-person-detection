@@ -28,7 +28,11 @@ Check the ```requirements.txt``` to install requested packages, or run like belo
 * run the code like below 
 * the input arguments can be changed by yourself
 ```bash
-~$ python run_video_person_detector.py --score 0.75
+~$ python run_webcam_person_detector.py --score 0.75
+```
+* with DeepSORT tracker 
+``` bash
+~$ python run_webcam_yolov4_DeepSORT.py --score 0.75
 ```
 
 <br/>
