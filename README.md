@@ -66,7 +66,7 @@ If you succeed to take the weight file in ```.tflite``` format, we're ready to b
 I built two inference codes; one for image input and another for webcam video input. These codes are referred to the original inference codes [here](https://github.com/hunglc007/tensorflow-yolov4-tflite);  ```detect.py``` and ```detectvideo.py```.
 
 
-### (New)The above training processes is uploaded [this repository](https://github.com/DoranLyong/Darknet-YOLOv4-Tensorflow_Lite-Tutorial)
+### (New)The above training processes is uploaded in [this repository](https://github.com/DoranLyong/Darknet-YOLOv4-Tensorflow_Lite-Tutorial)
 
 ***
 ## Reference 
