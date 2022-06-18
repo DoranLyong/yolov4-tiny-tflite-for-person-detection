@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "test_inference",
+            "type": "python",
+            "request": "launch",
+            "program": "run_person_detector.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true,
+            "args": [
+                "--image", "./data/persons.jpg",
+                "--score", "0.75"
+            ]
+        }
+    ]
+}

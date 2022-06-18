@@ -148,20 +148,26 @@ def draw_bbox(image, bboxes, info = False, show_label=True, classes=read_class_n
     random.seed(None)
 
     out_boxes, out_scores, out_classes, num_boxes = bboxes
-    for i in range(num_boxes):
-        if int(out_classes[i]) < 0 or int(out_classes[i]) > num_classes: continue
-        x,y,w,h = out_boxes[i]
+    for i in range(num_boxes[0]):
+        if int(out_classes[0][i]) < 0 or int(out_classes[0][i]) > num_classes: continue
+        
+        box = out_boxes[0][i]
+        ymin = int(box[0] * image_h)
+        xmin = int(box[1] * image_w)
+        ymax = int(box[2] * image_h)
+        xmax = int(box[3] * image_w)
+
         fontScale = 0.5
-        score = out_scores[i]
-        class_ind = int(out_classes[i])
+        score = out_scores[0][i]
+        class_ind = int(out_classes[0][i])
         class_name = classes[class_ind]
         bbox_color = colors[class_ind]
         bbox_thick = int(0.6 * (image_h + image_w) / 600)
-        c1, c2 = (x, y), (x + w, y + h)
+        c1, c2 = ((xmin, ymin), (xmax, ymax))
         cv2.rectangle(image, c1, c2, bbox_color, bbox_thick)
 
         if info:
-            print("Object found: {}, Confidence: {:.2f}, BBox Coords (xmin, ymin, width, height): {}, {}, {}, {} ".format(class_name, score, x, y, w, h))
+            print("Object found: {}, Confidence: {:.2f}, BBox Coords (xmin, ymin, xmax, ymax): {}, {}, {}, {} ".format(class_name, score, xmin, ymin, xmax, ymax))
 
         if show_label:
             bbox_mess = '%s: %.2f' % (class_name, score)
