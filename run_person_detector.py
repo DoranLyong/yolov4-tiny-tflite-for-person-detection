@@ -122,7 +122,7 @@ def main(_argv):
     """ 결과 출력 
     """
     image = Image.fromarray(image.astype(np.uint8))
-    image.show()
+    #image.show()
     image = cv2.cvtColor(np.array(image), cv2.COLOR_BGR2RGB)
     cv2.imwrite(FLAGS.output, image)
 
